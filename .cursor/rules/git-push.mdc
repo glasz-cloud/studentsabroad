@@ -1,0 +1,22 @@
+---
+description: Default git remote and push target for this project
+alwaysApply: true
+---
+
+# Git push — studentsabroad
+
+When the user says **git push**, **push**, or asks to push changes:
+
+- **Repository:** https://github.com/glasz-cloud/studentsabroad.git
+- **Remote:** `origin`
+- **Branch:** `main` (always push here unless they specify another branch)
+
+## Workflow
+
+1. Run `git status`, `git diff`, and `git log -3` to see state.
+2. If there are uncommitted changes the user clearly wants pushed, stage and commit first (only when push implies shipping current work).
+3. Ensure remote is set: `git remote get-url origin` → should be `https://github.com/glasz-cloud/studentsabroad.git`. If missing: `git remote add origin https://github.com/glasz-cloud/studentsabroad.git`. If wrong: `git remote set-url origin https://github.com/glasz-cloud/studentsabroad.git`.
+4. Push: `git push -u origin main` (or `git push` once upstream is configured).
+5. Do **not** ask the user to paste the repo URL again — use the URL above.
+
+Do not update global git config (user.name, user.email). Do not force-push to main unless explicitly requested.
