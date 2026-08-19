@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yacine Path Hungary — your trusted road from Algeria to universities across Hungary. With Yacine Mouloudi. Orientation, application, visa & arrival support.">
-  <title>Yacine Path Hungary — Algeria to Hungary</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Passage — guided crossing from North Africa to European university life. Basic €500 · Premium €700.">
+  <title>Passage — Your crossing to Europe</title>
+  <link rel="stylesheet" href="css/style.css?v=passage-voice">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -16,23 +16,19 @@
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#" class="logo">
-        <span class="logo__icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </span>
-        <span class="logo__text">
-          <strong>Yacine Path</strong>
-          <span>Hungary</span>
-        </span>
+        <span class="logo__mark" aria-hidden="true">→</span>
+        <span class="logo__word">Passage</span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#how-it-works">How it works</a>
-        <a href="#paths">Paths</a>
-        <a href="#about">About</a>
+        <a href="#story">Story</a>
+        <a href="#how-it-works">Process</a>
+        <a href="#paths">Packages</a>
+        <a href="#guide">Guide</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="header__actions">
-        <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20study%20in%20Hungary" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="#contact" class="btn btn--primary btn--sm">Free orientation</a>
+        <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20start%20my%20Passage" class="btn btn--ghost btn--sm" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="#contact" class="btn btn--primary btn--sm">See packages</a>
       </div>
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
@@ -41,234 +37,231 @@
   </header>
 
   <main>
-    <!-- Hero — compact above-the-fold dashboard -->
     <section class="hero">
       <div class="hero__bg" aria-hidden="true">
-        <div class="hero__orb hero__orb--1"></div>
-        <div class="hero__orb hero__orb--2"></div>
-        <div class="hero__orb hero__orb--3"></div>
-        <div class="hero__grid-pattern"></div>
-        <div class="hero__spotlight"></div>
+        <div class="hero__gradient"></div>
+        <div class="hero__line hero__line--1"></div>
+        <div class="hero__line hero__line--2"></div>
+        <div class="hero__horizon"></div>
       </div>
-      <div class="container hero__shell">
-        <div class="hero__top reveal">
-          <div class="hero__content">
-            <div class="badge badge--beam">
-              <span class="badge__dot"></span>
-              Algeria → Hungary · Est. 2026
-            </div>
-            <h1 class="hero__title">
-              Your trusted road<br>
-              <span class="text-gradient">from Algeria to Hungary</span>
-            </h1>
-            <p class="hero__tagline">Universities nationwide — Budapest, Debrecen, Szeged & beyond. Step by step.</p>
-            <p class="hero__lead">
-              With <strong>Yacine Mouloudi</strong> — we guide you from first question to enrolled student at a Hungarian university.
-            </p>
-            <div class="hero__actions">
-              <a href="#contact" class="btn btn--primary btn--lg btn--shimmer">
-                Start free orientation
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </a>
-              <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20study%20in%20Hungary" class="btn btn--outline btn--lg" target="_blank" rel="noopener">WhatsApp Yacine</a>
-            </div>
-          </div>
-
-          <div class="hero__panel border-beam">
-            <div class="hero__photo hero__photo--compact" role="img" aria-label="Yacine Mouloudi — photo placeholder">
-              <div class="hero__photo-inner">
-                <span class="hero__photo-initial">Y</span>
-                <span class="hero__photo-label">Yacine Mouloudi</span>
-              </div>
-            </div>
-            <div class="hero__stats-row">
-              <div class="stat-card stat-card--spotlight">
-                <span class="stat-card__value" data-count="100">~100</span>
-                <span class="stat-card__label">Students / semester</span>
-              </div>
-              <div class="stat-card stat-card--spotlight">
-                <span class="stat-card__value">~1M</span>
-                <span class="stat-card__label">Social reach</span>
-              </div>
-              <div class="stat-card stat-card--spotlight">
-                <span class="stat-card__value">5</span>
-                <span class="stat-card__label">Clear steps</span>
-              </div>
-            </div>
+      <div class="container hero__inner">
+        <div class="hero__copy reveal">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-fr">Le passage</span>
+            · Algeria → Hungary · Europe
+          </p>
+          <h1 class="hero__title">
+            Your crossing<br>
+            <span class="hero__title-accent">starts here.</span>
+          </h1>
+          <p class="hero__lead">
+            Life abroad is a <em>passage</em> — a transformation. We guide you from first question to enrolled student in Hungary. Clear steps. No hidden fees.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--primary btn--lg">
+              Begin your passage
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#story" class="btn btn--ghost-light btn--lg">Why Passage?</a>
           </div>
         </div>
 
-        <!-- Cities marquee — Hungary-wide -->
-        <div class="cities-marquee reveal" aria-label="University cities in Hungary">
-          <div class="cities-marquee__track">
-            <div class="cities-marquee__content">
-              <span>Budapest</span><span>Debrecen</span><span>Szeged</span><span>Pécs</span><span>Győr</span><span>Miskolc</span><span>Sopron</span><span>Eger</span>
+        <div class="hero__aside reveal reveal--delay">
+          <div class="hero__card">
+            <div class="hero__card-label">At a glance</div>
+            <div class="hero__metrics">
+              <div class="metric">
+                <span class="metric__val">€500</span>
+                <span class="metric__lbl">Basic package</span>
+              </div>
+              <div class="metric">
+                <span class="metric__val">5</span>
+                <span class="metric__lbl">Guided stages</span>
+              </div>
+              <div class="metric">
+                <span class="metric__val">€700</span>
+                <span class="metric__lbl">Premium package</span>
+              </div>
             </div>
-            <div class="cities-marquee__content" aria-hidden="true">
-              <span>Budapest</span><span>Debrecen</span><span>Szeged</span><span>Pécs</span><span>Győr</span><span>Miskolc</span><span>Sopron</span><span>Eger</span>
-            </div>
+            <div class="hero__card-divider"></div>
+            <p class="hero__card-note">End-to-end support · Algeria + Hungary team · Transparent pricing</p>
           </div>
         </div>
+      </div>
 
-        <!-- Trust + journey preview — visible without scrolling -->
-        <div class="hero__bottom reveal reveal--delay">
-          <div class="hero__trust">
-            <span class="trust-pill"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> End-to-end support</span>
-            <span class="trust-pill"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Algeria + Hungary team</span>
-            <span class="trust-pill"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Transparent pricing</span>
-            <span class="trust-pill"><svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> University partnerships</span>
-          </div>
-          <nav class="hero__steps" aria-label="Five step journey">
-            <a href="#how-it-works" class="step-chip"><span>01</span> Orient</a>
-            <a href="#how-it-works" class="step-chip"><span>02</span> Consult</a>
-            <a href="#how-it-works" class="step-chip"><span>03</span> Apply</a>
-            <a href="#how-it-works" class="step-chip"><span>04</span> Visa</a>
-            <a href="#how-it-works" class="step-chip"><span>05</span> Arrive</a>
-          </nav>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__marquee-track">
+          <span>Budapest</span><span>Debrecen</span><span>Szeged</span><span>Basic €500</span><span>Premium €700</span><span>Visa support</span><span>Airport pickup</span><span>Document review</span>
+          <span>Budapest</span><span>Debrecen</span><span>Szeged</span><span>Basic €500</span><span>Premium €700</span><span>Visa support</span><span>Airport pickup</span><span>Document review</span>
         </div>
       </div>
     </section>
 
-    <div class="hero-divider" aria-hidden="true"></div>
-
-    <!-- How it works -->
-    <section id="how-it-works" class="section">
+    <section id="story" class="section story">
       <div class="container">
-        <div class="section-header reveal">
-          <span class="section-label">Process</span>
-          <h2 class="section-title">Five clear steps.<br>Zero confusion.</h2>
-          <p class="section-lead">We guide you from first question to enrolled student in Hungary — with a proven system built on hundreds of successful placements.</p>
-        </div>
-
-        <div class="timeline reveal">
-          <div class="timeline__line" aria-hidden="true"></div>
-          <article class="timeline__step">
-            <div class="timeline__marker">01</div>
-            <div class="timeline__card">
-              <h3>Free orientation</h3>
-              <p>Watch our online orientation. Understand Hungary, costs, and whether it's the right fit for you.</p>
+        <div class="story__grid reveal">
+          <div class="story__left">
+            <span class="section-label">What Passage means</span>
+            <h2 class="section-title">Not a ticket.<br>A <span class="text-accent">guided crossing.</span></h2>
+          </div>
+          <div class="story__right">
+            <p class="story__text story__text--lead">
+              In French, <strong>passage</strong> is the act of crossing — from one shore to another, from one life to the next.
+            </p>
+            <p class="story__text">
+              We don't sell dreams. We walk the passage with you: orientation, university match, documents, visa, arrival. Step by step, with truth — costs clear, paths separate, no false promises.
+            </p>
+            <div class="story__pillars">
+              <div class="pillar">
+                <span class="pillar__icon">01</span>
+                <div>
+                  <strong>Freedom</strong>
+                  <p>A new life on the European continent — on your terms.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon">02</span>
+                <div>
+                  <strong>Trust</strong>
+                  <p>Fixed prices. €500 or €700 — discussed upfront, no hidden fees.</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar__icon">03</span>
+                <div>
+                  <strong>Clarity</strong>
+                  <p>Five steps. Two packages. You know exactly what you pay for.</p>
+                </div>
+              </div>
             </div>
-          </article>
-          <article class="timeline__step">
-            <div class="timeline__marker">02</div>
-            <div class="timeline__card">
-              <h3>Consultation</h3>
-              <p>We match you with the right program and deliver a clear, personalized document checklist.</p>
-            </div>
-          </article>
-          <article class="timeline__step">
-            <div class="timeline__marker">03</div>
-            <div class="timeline__card">
-              <h3>Application</h3>
-              <p>Full support through university application and paperwork — reviewed before submission.</p>
-            </div>
-          </article>
-          <article class="timeline__step">
-            <div class="timeline__marker">04</div>
-            <div class="timeline__card">
-              <h3>Acceptance & visa</h3>
-              <p>After acceptance, we guide visa and residence permit preparation with embassy-specific guidance.</p>
-            </div>
-          </article>
-          <article class="timeline__step">
-            <div class="timeline__marker">05</div>
-            <div class="timeline__card">
-              <h3>Arrive in Hungary</h3>
-              <p>Registration, settling in, and direct connection to the Algerian student community — Budapest and beyond.</p>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Paths -->
-    <section id="paths" class="section section--dark">
+    <section id="how-it-works" class="section section--dark">
       <div class="container">
         <div class="section-header section-header--center reveal">
-          <span class="section-label">Your choice</span>
-          <h2 class="section-title section-title--light">Same partner.<br>Two ways to fund it.</h2>
-          <p class="section-lead section-lead--light">Scholarship or self-funded — we guide both. You work with us either way.</p>
+          <span class="section-label">The process</span>
+          <h2 class="section-title section-title--light">Five stages.<br>One clear passage.</h2>
+          <p class="section-lead section-lead--light">From first curiosity to enrolled student in Hungary — five clear stages, fixed pricing, no guesswork.</p>
         </div>
 
-        <div class="pricing-grid reveal">
-          <article class="pricing-card">
-            <div class="pricing-card__header">
-              <span class="pricing-card__tier">Scholarship route</span>
-              <h3>Stipendium Hungaricum</h3>
-              <p class="pricing-card__price">Free guidance from us</p>
-            </div>
-            <ul class="pricing-card__features">
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> We explain every step — you stay with us</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Document checklist & timeline</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> We never charge for scholarship applications</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Same team from orientation to arrival</li>
-            </ul>
-            <a href="#contact" class="btn btn--outline btn--full btn--light">Ask about scholarship route</a>
+        <div class="stages reveal">
+          <article class="stage">
+            <div class="stage__num">01</div>
+            <h3>Orientation</h3>
+            <p>Initial consultation. Understand Hungary, costs, and pick the right package for your passage.</p>
           </article>
-
-          <article class="pricing-card">
-            <div class="pricing-card__header">
-              <span class="pricing-card__tier">Self-funded route</span>
-              <h3>Full journey support</h3>
-              <p class="pricing-card__price">Transparent fees · discussed in consultation</p>
-            </div>
-            <ul class="pricing-card__features">
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Program selection & matching</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Application & document review</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Visa & residence permit support</li>
-              <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.5 4.5L6.5 11.5 3 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Arrival orientation in Budapest</li>
-            </ul>
-            <a href="#contact" class="btn btn--primary btn--full btn--lg">Book free orientation</a>
+          <article class="stage">
+            <div class="stage__num">02</div>
+            <h3>Consultation</h3>
+            <p>We match you with the right program and build your personal document checklist.</p>
+          </article>
+          <article class="stage">
+            <div class="stage__num">03</div>
+            <h3>Application</h3>
+            <p>Full support through university application — every document reviewed before submission.</p>
+          </article>
+          <article class="stage">
+            <div class="stage__num">04</div>
+            <h3>Visa</h3>
+            <p>After acceptance, embassy-specific guidance for visa and residence permit.</p>
+          </article>
+          <article class="stage">
+            <div class="stage__num">05</div>
+            <h3>Arrival</h3>
+            <p>Registration and settling in. Premium includes airport pickup and in-person arrival support.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
+    <section id="paths" class="section">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-label">Leadership</span>
-          <h2 class="section-title">Built by people<br>students already trust</h2>
+          <span class="section-label">Packages</span>
+          <h2 class="section-title">Two packages.<br>One clear passage.</h2>
+          <p class="section-lead">Fixed pricing — no free tiers, no surprises. Scholarship or self-funded for tuition is separate; Passage is the guided crossing.</p>
         </div>
 
-        <div class="founders-grid reveal">
-          <article class="founder-card founder-card--primary">
-            <div class="founder-card__top">
-              <div class="founder-card__avatar founder-card__avatar--yacine">Y</div>
-              <div>
-                <h3>Yacine Mouloudi</h3>
-                <p class="founder-card__role">Co-founder · Public face</p>
-              </div>
-            </div>
-            <p class="founder-card__bio">Algerian creator based in Budapest. Built a pipeline of ~100 students per semester helping Algerians study in Hungary. Now co-founding this company to serve students with greater transparency and reach.</p>
-            <div class="founder-card__stats">
-              <div><strong>~100</strong><span>students / semester</span></div>
-              <div><strong>~1M</strong><span>followers</span></div>
-            </div>
+        <div class="paths-grid reveal">
+          <article class="path-card">
+            <span class="path-card__tag">Basic</span>
+            <h3>Document & application</h3>
+            <p class="path-card__price"><span class="path-card__amount">€500</span> one-time · full process support</p>
+            <ul class="path-card__list">
+              <li>Program matching & consultation</li>
+              <li>Personal document checklist</li>
+              <li>Application support & document review</li>
+              <li>Visa & residence permit guidance</li>
+              <li>WhatsApp support throughout</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--full">Choose Basic</a>
           </article>
 
-          <article class="founder-card">
-            <div class="founder-card__top">
-              <div class="founder-card__avatar">+</div>
-              <div>
-                <h3>Co-founder</h3>
-                <p class="founder-card__role">Higher Education Consultant</p>
-              </div>
-            </div>
-            <p class="founder-card__bio">University partnerships, admissions expertise, and Hungary-side support. Direct access to professors and institutions.</p>
-            <p class="founder-card__todo">Name & bio — coming soon</p>
+          <article class="path-card path-card--featured">
+            <span class="path-card__tag">Premium</span>
+            <h3>Full passage + arrival</h3>
+            <p class="path-card__price"><span class="path-card__amount">€700</span> one-time · everything in Basic, plus</p>
+            <ul class="path-card__list">
+              <li>Everything in Basic</li>
+              <li>Airport pickup in Budapest</li>
+              <li>In-person arrival orientation</li>
+              <li>Registration & settling-in support</li>
+              <li>Connection to the Algerian student community</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--full btn--lg">Choose Premium</a>
           </article>
+        </div>
+
+        <p class="paths-note reveal">Stipendium Hungaricum or self-funded covers <em>tuition & living</em> — not our service. We guide both routes; Passage fee is the same either way.</p>
+      </div>
+    </section>
+
+    <section id="guide" class="section section--muted">
+      <div class="container">
+        <div class="guide reveal">
+          <div class="guide__visual">
+            <div class="guide__photo" role="img" aria-label="Yacine Mouloudi — photo placeholder">
+              <span class="guide__initial">Y</span>
+            </div>
+            <div class="guide__badge">Your guide on the passage</div>
+          </div>
+          <div class="guide__content">
+            <span class="section-label">Meet your guide</span>
+            <h2 class="section-title">I made this crossing.<br>Now I guide yours.</h2>
+            <blockquote class="guide__quote">
+              <p>« I left Algeria, built a life in Budapest, and learned every step the hard way — documents, visa, arrival. Passage is how I walk that same path with you: honestly, on WhatsApp, step by step. »</p>
+              <cite>— Yacine</cite>
+            </blockquote>
+            <p class="guide__bio">
+              Passage is the brand. I'm the person you talk to — not a call centre, not a generic agency pitch.
+            </p>
+            <div class="guide__stats">
+              <div><strong>Budapest</strong><span>where I live now</span></div>
+              <div><strong>Algeria → Hungary</strong><span>the route I took</span></div>
+              <div><strong>Direct</strong><span>WhatsApp with me</span></div>
+            </div>
+            <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20start%20my%20Passage" class="btn btn--primary" target="_blank" rel="noopener">Message me on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="guide__cofounder reveal">
+          <div class="guide__cofounder-avatar">+</div>
+          <div>
+            <h3>Co-founder · Higher Education Consultant</h3>
+            <p>University partnerships, admissions expertise, Hungary-side operations. Name & bio — coming soon.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section section--muted">
+    <section id="faq" class="section">
       <div class="container container--narrow">
         <div class="section-header section-header--center reveal">
           <span class="section-label">FAQ</span>
-          <h2 class="section-title">Common questions</h2>
+          <h2 class="section-title">Before you cross</h2>
         </div>
 
         <div class="accordion reveal" id="faqAccordion">
@@ -283,20 +276,29 @@
           </div>
           <div class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>Do you charge for Stipendium Hungaricum?</span>
+              <span>What's the difference between Basic and Premium?</span>
               <svg class="accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="accordion__panel">
-              <p>No. We walk you through the scholarship process for free — no charge from us, ever. You stay with Yacine Path from start to finish.</p>
+              <p><strong>Basic (€500)</strong> covers documents, application, and visa guidance remotely. <strong>Premium (€700)</strong> adds airport pickup, in-person arrival support, and settling-in help in Budapest.</p>
             </div>
           </div>
           <div class="accordion__item">
             <button class="accordion__trigger" aria-expanded="false">
-              <span>How much does self-funded study cost?</span>
+              <span>Do you charge for Stipendium Hungaricum guidance?</span>
               <svg class="accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
             <div class="accordion__panel">
-              <p>Tuition and living costs vary by university and city. We give you exact numbers in consultation — no hidden fees.</p>
+              <p>Yes — Passage is a paid service (Basic or Premium). The official scholarship application itself is free through the government portal; our fee is for guided support through the entire crossing.</p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__trigger" aria-expanded="false">
+              <span>How much does study in Hungary cost overall?</span>
+              <svg class="accordion__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="accordion__panel">
+              <p>Passage is €500 or €700. Tuition and living costs depend on university and city — we break down the full picture in consultation. No hidden fees.</p>
             </div>
           </div>
           <div class="accordion__item">
@@ -321,21 +323,20 @@
       </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact" class="section contact">
       <div class="container">
         <div class="contact__wrapper reveal">
           <div class="contact__info">
-            <span class="section-label">Get started</span>
-            <h2 class="section-title section-title--light">Begin your journey<br>to Hungary</h2>
-            <p class="contact__desc">Leave your details — we'll send Module 1 and contact you on WhatsApp within 24 hours.</p>
+            <span class="section-label">Start</span>
+            <h2 class="section-title section-title--light">Ready for<br>your passage?</h2>
+            <p class="contact__desc">Leave your details — we'll send Orientation Module 1 and reach you on WhatsApp within 24 hours.</p>
             <div class="contact__trust">
               <div class="contact__trust-item">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18.333a8.333 8.333 0 100-16.666 8.333 8.333 0 000 16.666z" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                <span>Free orientation — no commitment</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="10" r="8.333" stroke="currentColor" stroke-width="1.5"/></svg>
+                <span>Fixed pricing · €500 or €700</span>
               </div>
               <div class="contact__trust-item">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18.333a8.333 8.333 0 100-16.666 8.333 8.333 0 000 16.666z" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="10" r="8.333" stroke="currentColor" stroke-width="1.5"/></svg>
                 <span>Response within 24 hours</span>
               </div>
             </div>
@@ -357,8 +358,17 @@
               <input type="email" name="email" placeholder="you@email.com" autocomplete="email">
             </label>
             <label class="form__field">
-              <span class="form__label">Funding route</span>
-              <select name="funding" required>
+              <span class="form__label">Package</span>
+              <select name="package" required>
+                <option value="">Basic or Premium?</option>
+                <option>Basic — €500</option>
+                <option>Premium — €700</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label class="form__field">
+              <span class="form__label">Tuition funding</span>
+              <select name="funding">
                 <option value="">Scholarship or self-funded?</option>
                 <option>Scholarship (Stipendium Hungaricum)</option>
                 <option>Self-funded</option>
@@ -376,7 +386,7 @@
                 <option>Other</option>
               </select>
             </label>
-            <button type="submit" class="btn btn--primary btn--full btn--lg">Sign up for free orientation</button>
+            <button type="submit" class="btn btn--primary btn--full btn--lg">Begin your passage</button>
             <p class="form__note" id="formNote">Form stores locally for now — connect CRM before launch.</p>
           </form>
         </div>
@@ -388,35 +398,32 @@
     <div class="container footer__grid">
       <div class="footer__brand">
         <a href="#" class="logo logo--footer">
-          <span class="logo__icon" aria-hidden="true">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </span>
-          <span class="logo__text">
-            <strong>Yacine Path</strong>
-            <span>Hungary</span>
-          </span>
+          <span class="logo__mark" aria-hidden="true">→</span>
+          <span class="logo__word">Passage</span>
         </a>
-        <p>Algeria → Hungary · Legal entity TBD</p>
+        <p class="footer__tagline">Le passage vers l'Europe.</p>
+        <p class="footer__legal">Algeria → Hungary · Legal entity TBD</p>
       </div>
       <div class="footer__col">
         <h4>Navigate</h4>
-        <a href="#how-it-works">How it works</a>
-        <a href="#paths">Paths</a>
-        <a href="#about">About</a>
+        <a href="#story">Story</a>
+        <a href="#how-it-works">Process</a>
+        <a href="#paths">Packages</a>
+        <a href="#guide">Guide</a>
         <a href="#faq">FAQ</a>
       </div>
       <div class="footer__col">
-        <h4>Get started</h4>
-        <a href="#contact">Free orientation</a>
-        <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20study%20in%20Hungary" target="_blank" rel="noopener">WhatsApp</a>
+        <h4>Start</h4>
+        <a href="#contact">Get in touch</a>
+        <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20start%20my%20Passage" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>© 2026 Yacine Path Hungary. All rights reserved.</p>
+      <p>© 2026 Passage. All rights reserved.</p>
     </div>
   </footer>
 
-  <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20study%20in%20Hungary" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/0000000000?text=Hello%2C%20I%20want%20to%20start%20my%20Passage" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 

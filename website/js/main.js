@@ -4,7 +4,6 @@ const nav = document.getElementById('nav');
 const signupForm = document.getElementById('signupForm');
 const formNote = document.getElementById('formNote');
 
-// Header scroll state
 function updateHeader() {
   const hero = document.querySelector('.hero');
   const headerH = 72;
@@ -19,7 +18,6 @@ header?.classList.add('is-hero');
 window.addEventListener('scroll', updateHeader, { passive: true });
 updateHeader();
 
-// Mobile menu
 menuToggle?.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('is-open');
   menuToggle.setAttribute('aria-expanded', isOpen);
@@ -32,7 +30,6 @@ document.querySelectorAll('.nav a').forEach((link) => {
   });
 });
 
-// FAQ accordion
 document.querySelectorAll('.accordion__trigger').forEach((trigger) => {
   trigger.addEventListener('click', () => {
     const item = trigger.closest('.accordion__item');
@@ -50,7 +47,6 @@ document.querySelectorAll('.accordion__trigger').forEach((trigger) => {
   });
 });
 
-// Scroll reveal
 const revealObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -65,35 +61,13 @@ const revealObserver = new IntersectionObserver(
 
 document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
 
-// Hero spotlight (mouse-tracking, 21st.dev style)
-const hero = document.querySelector('.hero');
-
-hero?.addEventListener('mousemove', (e) => {
-  const rect = hero.getBoundingClientRect();
-  const x = ((e.clientX - rect.left) / rect.width) * 100;
-  const y = ((e.clientY - rect.top) / rect.height) * 100;
-  hero.style.setProperty('--spot-x', `${x}%`);
-  hero.style.setProperty('--spot-y', `${y}%`);
-});
-
-document.querySelectorAll('.stat-card--spotlight').forEach((card) => {
-  card.addEventListener('mousemove', (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    card.style.setProperty('--mouse-x', `${x}px`);
-    card.style.setProperty('--mouse-y', `${y}px`);
-  });
-});
-
-// Signup form
 signupForm?.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(signupForm));
-  const leads = JSON.parse(localStorage.getItem('orientation_leads') || '[]');
+  const leads = JSON.parse(localStorage.getItem('passage_leads') || '[]');
   leads.push({ ...data, date: new Date().toISOString() });
-  localStorage.setItem('orientation_leads', JSON.stringify(leads));
+  localStorage.setItem('passage_leads', JSON.stringify(leads));
   formNote.textContent = 'Thank you! We will contact you on WhatsApp soon.';
-  formNote.style.color = '#059669';
+  formNote.style.color = '#C9A227';
   signupForm.reset();
 });
